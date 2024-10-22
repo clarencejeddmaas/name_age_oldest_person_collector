@@ -5,3 +5,6 @@ def valid_name(name):
 # 2. Define function to validate age
 def valid_age(age):
     return age.isdigit() and int(age) >= 0
+
+# 3. Initialize list for storing data
+people_info = []
