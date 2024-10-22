@@ -37,3 +37,15 @@ while True:
     # 8. Exit loop if no more entries
     if another_entry == 'no':
         break
+
+# 9. Find the oldest person
+oldest_person = None
+for person in people_info:
+    if oldest_person is None or person["age"] > oldest_person["age"]:
+        oldest_person = person
+
+# 10. Display the person's information
+if oldest_person:
+    print(f"The oldest person is {oldest_person['name']} who is {oldest_person['age']} years old.")
+else:
+    print("No entries were made.")
