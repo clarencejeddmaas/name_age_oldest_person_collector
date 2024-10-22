@@ -30,3 +30,10 @@ while True:
     
     # 6. Store name and age in list
     people_info.append({"name": name, "age": age})
+
+    # 7. Ask for another entry
+    another_entry = input("Do you want another entry? (YES or NO)").strip().lower()
+
+    # 8. Exit loop if no more entries
+    if another_entry == 'no':
+        break
